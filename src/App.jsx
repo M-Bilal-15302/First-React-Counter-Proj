@@ -5,10 +5,10 @@ import './App.css'
 
 
 
-//--------------UseState-------
+
 
 function App() {
-
+// useState (hook) used to change the state of variable in whole documnet
   let [counter , setcounter] = useState(0)
 const addVal = ()=>{
   setcounter(counter+1) 
