@@ -9,10 +9,19 @@ import './App.css'
 
 function App() {
 // useState (hook) used to change the state of variable in whole documnet
-  let [counter , setcounter] = useState(0)
+  let [counter , setcounter] = useState(1)
+
+
+  // here setCounter from useState take a callback function and that callback have a perameter 
+  //initially set to usestate value (useState(1)) 
+  // its like Previous Counter and it help to store the Previous Value and used it to increase many time.
 const addVal = ()=>{
-  setcounter(counter+1) 
+  setcounter((preCounter)=>(preCounter+1))
+  setcounter((preCounter)=>(preCounter+1))
+  setcounter((preCounter)=>(preCounter+1))
 }
+
+
 const removeVal = ()=>{
   setcounter(counter-1)
 }
